@@ -17,11 +17,11 @@ def img2text(url):
 img2text("image.jpg")
 
 # %% llmtext
-"""""
+"""
 def generate_story(scenario):
-    template= """"
+    template= 
     You are a stpry teller:
-    """
+    
     prompt = PromptTemplate(template=template, input_variables=["scenario"])
 
     story_llm = LLMChain(llm=OpenAI(
@@ -30,7 +30,7 @@ def generate_story(scenario):
 
     print(story)
     return story
-""""
+"""
 
 scenario = img2text("image.jpg")
 story = generate_story(scenario)
